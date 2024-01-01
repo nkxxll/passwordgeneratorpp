@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++11",
+      "-Wall",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/nkirschall/projects/cpp/passwordgeneratorpp",
+    "file": "/home/nkirschall/projects/cpp/passwordgeneratorpp/src/main.cpp",
+    "output": "/home/nkirschall/projects/cpp/passwordgeneratorpp/build/main.o"
+  }
+]
