@@ -7,11 +7,11 @@
       "-Iinclude",
       "-c",
       "-o",
-      "build/main.o",
-      "src/main.cpp"
+      "build/pwgenerator.o",
+      "src/pwgenerator.cpp"
     ],
     "directory": "/home/nkirschall/projects/cpp/passwordgeneratorpp",
-    "file": "/home/nkirschall/projects/cpp/passwordgeneratorpp/src/main.cpp",
-    "output": "/home/nkirschall/projects/cpp/passwordgeneratorpp/build/main.o"
+    "file": "/home/nkirschall/projects/cpp/passwordgeneratorpp/src/pwgenerator.cpp",
+    "output": "/home/nkirschall/projects/cpp/passwordgeneratorpp/build/pwgenerator.o"
   }
 ]
