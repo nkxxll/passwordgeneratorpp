@@ -16,7 +16,7 @@ SRCS = $(wildcard $(SRCDIR)/*.cpp)
 OBJS = $(patsubst $(SRCDIR)/%.cpp, $(BUILDDIR)/%.o, $(SRCS))
 DEPS = $(wildcard $(INCDIR)/*.h)
 # Library flags
-LIB = -lncurses
+LIB = -lncurses -lssl -lcrypto
 
 # Build executable
 $(BINDIR)/$(TARGET): $(OBJS)

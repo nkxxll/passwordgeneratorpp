@@ -1,3 +1,6 @@
+#include <cstdlib>
+#include <iostream>
+#include <openssl/rand.h>
 #include <pwgenerator.h>
 
 Generator::Generator()
@@ -32,7 +35,14 @@ std::string Generator::generatePassword(int length)
         // get a random number
         // isn't there a os.random() function for this purpose with quantum
         // mechanics?
-        int random = ::random() % charset.length();
+        // int random = ::random() % charset.length();
+        unsigned char bytes[4];
+        RAND_bytes(bytes, 4);
+        int random =
+            int((unsigned char)(bytes[0]) << 24 |
+                (unsigned char)(bytes[1]) << 16 |
+                (unsigned char)(bytes[2]) << 8 | (unsigned char)(bytes[3])) %
+            charset.length();
         // index the string at the random numbers idx & add the char to our
         // password
         password += charset[random];
